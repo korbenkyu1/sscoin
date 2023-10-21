@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수성 화폐</title>
+</head>
+<body>
+    <style>
+
+    </style>
+
+    <div>
+        <h1>수성 화폐</h1>
+        <p></p>
+    </div>
+    <button>시작하기</button>
+
+    <script>
+        const urls = [
+            "https://port-0-susung-coin-6w1j2alm263fn5.sel5.cloudtype.app/login",
+        ];
+
+        function redirect(){
+            const i = Math.floor(Math.random()*urls.length);
+            window.location = urls[i];
+        }
+
+        document.querySelector('button').addEventListener('click', redirect);
+    </script>
+</body>
+</html>
